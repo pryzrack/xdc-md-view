@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Marked in the browser</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="assets/modules/github/github-markdown.css" />
+    <!-- highlight -->
+    <link href="assets/modules/highlight/github.css" rel="stylesheet" />
+    <!-- custom -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="nav-panel">
+        <div class="nav-group">
+            <button onclick="HISTORY.back()"><span class="octicon octicon-left"></span></button>
+            <button onclick="HISTORY.forward()"><span class="octicon octicon-rigth"></span></button>
+            <button onclick="loadPage('index')"><span class="octicon octicon-home"></span></button>
+            <button onclick="smoothscroll()"><span class="octicon octicon-move-to-top"></span></button>
+            <button onclick="loadPage('info', 'assets/')"><span class="octicon octicon-info"></span></button>
+        </div>
+    </div>
+    <article class="markdown-body" id="content"></article>
+    <!--<script src="assets/modules/jquery/jquery.min.js"></script>-->
+    <script src="assets/modules/marked/marked.min.js"></script>
+    <script src="assets/modules/highlight/highlight.min.js"></script>
+    <!-- Debugging -->
+    <script src="./eruda.min.js"></script>
+    <script>
+        eruda.init();
+    </script>
+    <script src="assets/js/app.js"></script>
+    <script>
+</body>
+</html>
